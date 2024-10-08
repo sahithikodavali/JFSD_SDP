@@ -1,0 +1,625 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  .login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .login-left {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input[type="password"] {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    margin-left: -25px;
+    margin-top: 12px;
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password a {
+    color: #a0a0a0;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #7c4dff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #6b41e2;
+  }
+  
+  .admin-option {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .admin-option button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-right {
+    background-color: rgba(146, 95, 226, 1);
+    ;
+    color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .login-right h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .login-right p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .login-right img {
+    max-width: 80%;
+  }
+  /* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #34495e;
+}
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+header p {
+  color: #7f8c8d;
+}
+
+/* Enrolled Courses Section */
+.enrolled-courses {
+  margin-bottom: 30px;
+}
+
+.course-list {
+  display: flex;
+  gap: 20px;
+}
+
+.course-card {
+  flex: 1;
+  background-color:rgba(225, 210, 255, 1);
+  
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.course-card:nth-child(2) {
+  background-color: rgba(253, 225, 172, 1);
+}
+
+.course-card:nth-child(3) {
+  background-color: rgba(186, 229, 245, 1);
+}
+
+.course-card:nth-child(4) {
+  background-color:rgba(204, 239, 191, 1);
+  ;
+}
+
+/* Exam Board Section */
+.exam-board table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.exam-board th, .exam-board td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.exam-board th {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+.exam-board td {
+  background-color: #fff;
+}
+
+.exam-board tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Homework Section */
+.homework-section {
+  margin-bottom: 30px;
+}
+
+.homework-list {
+  display: flex;
+  gap: 20px;
+}
+
+.homework-card {
+  flex: 1;
+  background-color: #f3a35e;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.homework-card:nth-child(2) {
+  background-color: #43d7cd;
+}
+
+.homework-card:nth-child(3) {
+  background-color: #c082db;
+}
+
+.homework-card:nth-child(4) {
+  background-color: #fca096;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course-list, .homework-list {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 180px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+}
+/* Notification Bar */
+.notification-bar {
+  background-color: #ffeaa7; /* Soft pastel yellow */
+  color: #2c3e50;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Space between the bar and the rest of the content */
+}
+
+.notification-bar p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.join-club-btn {
+  background-color: #0984e3; /* Button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.join-club-btn:hover {
+  background-color: #74b9ff; /* Lighter blue on hover */
+}
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #34495e; /* Dark background */
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Improved font */
+}
+
+.sidebar-header {
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  color: #ffffff; /* Header text color */
+  font-size: 24px; /* Header font size */
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  color: #ecf0f1; /* Link text color */
+  text-decoration: none;
+  font-size: 18px; /* Increased font size */
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Added transition for hover effect */
+}
+
+.sidebar a:hover {
+  background-color: #2c3e50; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+.logout-btn {
+  background-color: #e74c3c; /* Logout button color */
+  color: #fff; /* Text color */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+
+.sidebar a {
+  color: #ecf0f1; /* Link text color */
+  text-decoration: none;
+  font-size: 18px; /* Increased font size */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Added transition for hover effect */
+}
+
+.sidebar a i {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 20px; /* Icon size */
+}
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #0b2447;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #fff;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #22305b;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn {
+  background-color: #f04a47;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background-color: #d83834;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #34495e;
+}
+
+.recent-results, .scheduled-tests {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.recent-results {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recent-results .chart {
+  width: 50%;
+  max-width: 500px;
+}
+
+.result-info {
+  width: 40%;
+}
+
+.result-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.result-info ul li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.result-info ul li span {
+  font-weight: bold;
+}
+
+/* Scheduled Tests */
+.scheduled-tests {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-test {
+  background-color: #2ecc71;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.create-test button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.create-test button:hover {
+  background-color: #229954;
+}
+
+.scheduled-test {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.scheduled-test h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.scheduled-test p {
+  font-size: 1.2em;
+  color: #34495e;
+}
+
+.timer {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #e74c3c;
+}
+
+.scheduled-test button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.scheduled-test button:hover {
+  background-color: #2980b9;
+}
+
+/* Image Section */
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px; /* Optional for rounded corners */
+}

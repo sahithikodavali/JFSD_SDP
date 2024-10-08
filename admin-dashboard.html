@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script>
+    function logout() {
+      // Redirect to the login page
+      window.location.href = 'index.html'; // Make sure this path is correct
+    }
+  </script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Admin Portal</h2>
+      </div>
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#"><i class="fas fa-tasks"></i> Tests</a></li>
+        <li><a href="#"><i class="fas fa-chart-line"></i> Results</a></li>
+        <li><a href="#"><i class="fas fa-user-graduate"></i> Students</a></li>
+        <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+        <li><a href="index.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Recent Test Results</h1>
+      </header>
+
+      <section class="recent-results">
+        <div class="chart">
+            <img src="https://i.pinimg.com/originals/7f/cf/ad/7fcfadad4c76e5c38ba4f45b419881b8.jpg" alt="Recent Test Results" style="width: 100%; max-width: 500px;">
+          </div>
+          
+        <!-- Insert Pie Chart here -->
+        <div class="chart">
+          <img src="https://search-static.byjusweb.com/question-images/byjus/infinitestudent-images/ckeditor_assets/pictures/45394/content_tan_inv_root_2.jpg" alt="Recent Test Results" style="width: 100%; max-width: 500px;"> <!-- The chart image -->
+        </div>
+        <div class="result-info">
+          <ul>
+            <li><span style="color: #E74C3C;">220 students</span> - 19% Students passing with A grade</li>
+            <li><span style="color: #1ABC9C;">220 students</span> - 19% Students passing with B grade</li>
+            <li><span style="color: #3498DB;">220 students</span> - 19% Students passing with C grade</li>
+            <li><span style="color: #F39C12;">220 students</span> - 19% Students passing with D grade</li>
+            <li><span style="color: #9B59B6;">220 students</span> - 19% Students failing the test</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="scheduled-tests">
+        <div class="create-test">
+          <button>Create Test</button>
+        </div>
+        <div class="scheduled-test">
+          <h2>Scheduled Test</h2>
+          <p>Geography quiz - 12 May, 2023</p>
+          <div class="timer">00:42:10</div>
+          <button>Set Another</button>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
